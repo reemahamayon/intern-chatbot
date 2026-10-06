@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="pill">Online 24/7 for every intern</span>
+      <h1>Your internship questions, <span>answered instantly.</span></h1>
+      <p class="lead">Ask about tasks, submissions, deadlines and policies. Get clear, reliable answers from our AI assistant any time of the day, without waiting for a reply.</p>
+      <div class="hero-actions">
+        <a href="/chat" class="btn btn-primary btn-lg">Start chatting</a>
+        <a href="/faqs" class="btn btn-outline btn-lg">Browse FAQs</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>24/7</strong><span>Always available</span></div>
+        <div><strong>&lt; 5s</strong><span>Typical answer time</span></div>
+        <div><strong>100%</strong><span>Free for interns</span></div>
+      </div>
+    </div>
+
+    <div class="mock-chat">
+      <div class="mock-head">
+        <div class="mock-avatar">IH</div>
+        <div><strong>Intern Helper</strong><small>Online now</small></div>
+      </div>
+      <div class="mock-body">
+        <div class="bubble user">How do I submit my task?</div>
+        <div class="bubble bot">Open your dashboard, go to Assignments, select the task and click Start Submission. Then add your links and submit.</div>
+        <div class="bubble user">Do I need a LinkedIn post?</div>
+        <div class="bubble bot">Yes. Post about your task, tag the company page, use relevant hashtags and add the post link to your submission.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Features</span>
+      <h2>Everything an intern needs in one place</h2>
+      <p>Fast answers, clear guidelines and a friendly assistant that understands your questions.</p>
+    </div>
+    <div class="card-grid">
+      <div class="feature-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Natural conversation</h3>
+        <p>Ask in your own words. The assistant understands your question and replies in a clear, friendly way.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Available 24/7</h3>
+        <p>Late at night or on a weekend, get help the moment you are stuck, with no waiting for a response.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        <h3>Built on a knowledge base</h3>
+        <p>Answers come from real FAQs, task guidelines and policies, so you get facts instead of guesses.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Task guidelines</h3>
+        <p>Know exactly what to submit, from LinkedIn posts to GitHub repositories, before you start.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Clear policies</h3>
+        <p>Understand the rules on conduct, communication and confidentiality in simple language.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>Your own account</h3>
+        <p>Sign up to keep your chat history and come back to your earlier questions any time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Get your answer in three steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Ask your question</h3>
+        <p>Type any question about tasks, deadlines or policies, or tap a quick suggestion.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>We search the knowledge base</h3>
+        <p>The assistant finds the most relevant guidelines and FAQs for your question.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Get a clear answer</h3>
+        <p>Receive a short, accurate reply you can act on right away.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Have a question right now?</h2>
+      <p>Start a conversation with Intern Helper and get unstuck in seconds.</p>
+      <a href="/chat" class="btn btn-primary btn-lg">Ask a question</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

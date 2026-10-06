@@ -1,0 +1,158 @@
+{
+  "faqs": [
+    {
+      "id": "faq-1",
+      "question": "What is Internee.pk?",
+      "answer": "Internee.pk is Pakistan's virtual internship platform. It helps students and graduates build practical tech skills through real tasks, mentorship, verified certificates and a job portal.",
+      "keywords": ["internee", "what is", "platform", "about", "virtual internship"]
+    },
+    {
+      "id": "faq-2",
+      "question": "How do I get started?",
+      "answer": "There are three steps: sign up and choose a domain, complete a short application form, then finish your internship tasks to earn your verified certificate.",
+      "keywords": ["start", "join", "apply", "application", "sign up", "register", "domain"]
+    },
+    {
+      "id": "faq-3",
+      "question": "Do I need experience to join?",
+      "answer": "No experience is required. The programs are designed to take you from the basics to more advanced skills.",
+      "keywords": ["experience", "beginner", "eligible", "who can join", "requirements"]
+    },
+    {
+      "id": "faq-4",
+      "question": "What does Internee.pk offer?",
+      "answer": "You get industry-style tasks with feedback, a guided learning path, mentorship sessions, an LMS with courses and workshops, AI mock interviews, resume and career resources, and a job portal.",
+      "keywords": ["offer", "benefits", "features", "lms", "courses", "mock interview", "resume", "career"]
+    },
+    {
+      "id": "faq-5",
+      "question": "How do I submit my task?",
+      "answer": "Open your dashboard and go to Assignments, then open the task. Read the Guidelines tab first. When your work is ready, use the Submit Work tab or the Start Submission button and submit what the task's deliverable asks for.",
+      "keywords": ["submit", "submission", "assignment", "assignments", "upload", "deliverable", "task"]
+    },
+    {
+      "id": "faq-6",
+      "question": "How long is the program?",
+      "answer": "The Graduate Programs run for 12 weeks. The duration of your internship can depend on your track, so please check your offer or dashboard for your exact dates.",
+      "keywords": ["duration", "how long", "weeks", "months", "length", "period"]
+    },
+    {
+      "id": "faq-7",
+      "question": "Will I get a certificate?",
+      "answer": "Yes. After you complete your internship you receive a verified digital certificate. You can find the certification section in your dashboard.",
+      "keywords": ["certificate", "certification", "verified", "digital", "completion"]
+    },
+    {
+      "id": "faq-8",
+      "question": "Does Internee.pk help with jobs?",
+      "answer": "Internee.pk has a dedicated Job Portal where you can explore full-time opportunities, along with interview practice and career resources. These improve your chances, but a job is not guaranteed.",
+      "keywords": ["job", "jobs", "placement", "hiring", "portal", "employment"]
+    },
+    {
+      "id": "faq-9",
+      "question": "Is there mentorship?",
+      "answer": "Yes. The mentorship program includes guided weekly sessions, one-on-one guidance, project reviews and career planning.",
+      "keywords": ["mentor", "mentorship", "guidance", "weekly", "sessions", "review"]
+    },
+    {
+      "id": "faq-10",
+      "question": "How can I contact support?",
+      "answer": "You can email issues@internee.pk or call +92 312 3023645. You can also use the Contact page on this website to send us a message.",
+      "keywords": ["contact", "support", "help", "email", "phone", "issue", "problem"]
+    },
+    {
+      "id": "faq-11",
+      "question": "What is the deadline for tasks, and what if I miss it?",
+      "answer": "Each task's deadline is shown on its page in your dashboard. This assistant does not have a verified rule about late submissions or extensions, so please check the task page or email issues@internee.pk to be sure.",
+      "keywords": ["deadline", "due", "late", "miss", "missed", "extension", "last date", "time limit"]
+    },
+    {
+      "id": "faq-12",
+      "question": "Do I need a LinkedIn post, GitHub link or deployment link?",
+      "answer": "It depends on the task. Some tasks ask for items such as a LinkedIn post link, a GitHub repository link or a live deployment link. The Guidelines tab of each task lists exactly what to submit, so follow that.",
+      "keywords": ["linkedin", "github", "deployment", "link", "repository", "post", "video", "report"]
+    },
+    {
+      "id": "faq-13",
+      "question": "How many tasks do I need to finish for the certificate?",
+      "answer": "The number of required tasks is set by your internship, and this assistant does not have a verified number. Please check your dashboard or ask support at issues@internee.pk.",
+      "keywords": ["how many", "number of tasks", "required", "minimum", "certificate", "eligible", "tasks"]
+    },
+    {
+      "id": "faq-14",
+      "question": "My certificate has not arrived. What should I do?",
+      "answer": "First check the Certification section in your dashboard. If you have completed your tasks and still do not see it, email issues@internee.pk with your name and the email you registered with.",
+      "keywords": ["certificate", "not received", "not arrived", "missing", "where", "download", "certification"]
+    },
+    {
+      "id": "faq-15",
+      "question": "What if my submission needs changes?",
+      "answer": "Tasks come with structured feedback. Check your task in the dashboard for feedback, improve your work following the task guidelines, and email issues@internee.pk if the feedback is unclear.",
+      "keywords": ["rejected", "reject", "changes", "feedback", "resubmit", "review", "declined", "fix"]
+    },
+    {
+      "id": "faq-16",
+      "question": "I cannot log in or open my task. What should I do?",
+      "answer": "Make sure you are using the same email you registered with and try again. If the problem continues, email issues@internee.pk and describe what you see.",
+      "keywords": ["login", "log in", "access", "cannot open", "password", "dashboard", "account", "stuck"]
+    }
+  ],
+  "task_guidelines": [
+    {
+      "id": "guide-1",
+      "title": "Read the task instructions first",
+      "content": "Every task has a Guidelines tab with its Task Instructions: the objective, the details such as features and suggested tools, and the deliverable. Read all of it before you start and follow the tools and constraints it lists.",
+      "keywords": ["instructions", "guidelines", "objective", "details", "deliverable", "tools", "read"]
+    },
+    {
+      "id": "guide-2",
+      "title": "Submit exactly what is asked",
+      "content": "Use the Submit Work tab or the Start Submission button on the task. Submit what the task's deliverable asks for, and double-check it before you send it.",
+      "keywords": ["submit", "submission", "submit work", "deliverable", "send", "upload"]
+    },
+    {
+      "id": "guide-3",
+      "title": "Industry-style projects and feedback",
+      "content": "Tasks mirror real industry workflows. You receive structured feedback, and each completed task adds verified proof of your skills to your profile, along with progress tracking and achievement badges.",
+      "keywords": ["feedback", "projects", "industry", "badges", "progress", "verified", "skills"]
+    },
+    {
+      "id": "guide-4",
+      "title": "Build your portfolio",
+      "content": "Your completed tasks become portfolio pieces that show employers real, verified work. Take care with quality, because each task is part of your professional portfolio.",
+      "keywords": ["portfolio", "quality", "employers", "work", "showcase", "profile"]
+    },
+    {
+      "id": "guide-5",
+      "title": "Follow the learning path",
+      "content": "The platform offers a guided learning path for beginners and advanced learners. Tasks and milestones follow the software development life cycle, so you practise the full process step by step.",
+      "keywords": ["learning path", "sdlc", "milestones", "guided", "beginner", "advanced", "steps"]
+    }
+  ],
+  "policies": [
+    {
+      "id": "policy-1",
+      "title": "Information we collect",
+      "content": "When you register or contact the platform, it may collect details such as your name, email address, phone number and the messages you send. Like most websites, it also keeps log files with your IP address, browser type, internet provider and visit times.",
+      "keywords": ["information", "collect", "data", "personal", "privacy", "log files", "ip address"]
+    },
+    {
+      "id": "policy-2",
+      "title": "How your information is used",
+      "content": "Your information is used to run and improve the website, understand how it is used, communicate with you (including emails and updates), and detect and prevent fraud.",
+      "keywords": ["use", "used", "purpose", "email", "fraud", "improve", "communicate"]
+    },
+    {
+      "id": "policy-3",
+      "title": "Cookies and advertising",
+      "content": "The platform uses cookies to remember preferences and the pages you visit. Third-party partners such as Google may also use cookies for advertising. You can turn cookies off in your browser settings.",
+      "keywords": ["cookies", "advertising", "ads", "google", "browser", "tracking", "opt out"]
+    },
+    {
+      "id": "policy-4",
+      "title": "Privacy questions and changes",
+      "content": "For any privacy question, email issues@internee.pk. The privacy policy can be updated from time to time, and changes take effect once they are posted on the policy page.",
+      "keywords": ["privacy", "policy", "changes", "update", "questions", "terms", "contact"]
+    }
+  ]
+}

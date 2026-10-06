@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Task Guidelines{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Submissions</span>
+    <h1>Task guidelines</h1>
+    <p>Follow these guidelines to make sure your task submission is complete and accepted.</p>
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="container">
+    <input type="text" id="pageSearch" class="search-input" placeholder="Search guidelines...">
+
+    <div class="info-grid">
+      {% for g in guidelines %}
+      <div class="info-card" data-search="{{ (g.title ~ ' ' ~ g.content)|lower }}">
+        <span class="tag">Guideline {{ loop.index }}</span>
+        <h3>{{ g.title }}</h3>
+        <p>{{ g.content }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="empty-note" id="emptyNote">No guidelines match your search.</p>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='pages.js') }}"></script>
+{% endblock %}

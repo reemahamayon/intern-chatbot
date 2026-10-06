@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+.env
+contact_messages.json
+.vscode/
+.DS_Store

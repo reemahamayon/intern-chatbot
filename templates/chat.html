@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Chat{% endblock %}
+
+{% block content %}
+<style>.footer { display: none; }</style>
+
+<div class="chat-page">
+  <aside class="chat-side">
+    <h3>Quick questions</h3>
+    <div class="chip-list">
+      <button class="chip" data-q="How do I submit my task?">How do I submit my task?</button>
+      <button class="chip" data-q="What is the deadline for tasks?">What is the deadline for tasks?</button>
+      <button class="chip" data-q="Do I need to post on LinkedIn?">Do I need to post on LinkedIn?</button>
+      <button class="chip" data-q="What should my GitHub repository include?">What should my GitHub repository include?</button>
+      <button class="chip" data-q="When will I get my certificate?">When will I get my certificate?</button>
+      <button class="chip" data-q="Is the internship paid?">Is the internship paid?</button>
+    </div>
+    <button class="btn btn-outline new-chat" id="newChat" disabled>+ New chat</button>
+  </aside>
+
+  <section class="chat-main">
+    <div class="chat-header">
+      <div class="mock-avatar">IH</div>
+      <div>
+        <strong>Intern Helper</strong>
+        <small>Online now</small>
+      </div>
+    </div>
+
+    <div class="messages" id="messages"></div>
+
+    <div class="composer">
+      <form id="chatForm" class="composer-row" autocomplete="off">
+        <textarea id="chatInput" rows="1" maxlength="1000" placeholder="Ask about tasks, deadlines or policies..." disabled></textarea>
+        <button type="submit" class="send-btn" id="sendBtn" aria-label="Send message" disabled>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
+      <small>Press Enter to send, Shift + Enter for a new line. Answers come from the intern knowledge base.</small>
+    </div>
+
+    <div class="chat-gate" id="chatGate">
+      <div class="gate-card">
+        <div class="gate-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h2>Please log in to chat</h2>
+        <p>Intern Helper is for registered interns. Log in or create a free account to ask questions and keep your chat history.</p>
+        <div class="gate-actions">
+          <a href="/login?next=/chat" class="btn btn-primary btn-lg">Log in</a>
+          <a href="/signup?next=/chat" class="btn btn-outline btn-lg">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script type="module" src="{{ url_for('static', filename='chat.js') }}"></script>
+{% endblock %}

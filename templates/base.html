@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Home{% endblock %} | Intern Helper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="brand">
+        <span class="brand-mark">IH</span>
+        <span class="brand-name">Intern Helper</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="/" class="{% if request.path == '/' %}active{% endif %}">Home</a>
+        <a href="/chat" class="{% if request.path == '/chat' %}active{% endif %}">Chat</a>
+        <a href="/faqs" class="{% if request.path == '/faqs' %}active{% endif %}">FAQs</a>
+        <a href="/guidelines" class="{% if request.path == '/guidelines' %}active{% endif %}">Task Guidelines</a>
+        <a href="/policies" class="{% if request.path == '/policies' %}active{% endif %}">Policies</a>
+        <a href="/contact" class="{% if request.path == '/contact' %}active{% endif %}">Contact</a>
+        <div class="nav-auth-mobile pending" id="authMobile">
+          <a href="/login" class="btn btn-ghost">Log in</a>
+          <a href="/signup" class="btn btn-primary">Sign up</a>
+        </div>
+      </nav>
+
+      <div class="nav-auth pending" id="authDesktop">
+        <a href="/login" class="btn btn-ghost">Log in</a>
+        <a href="/signup" class="btn btn-primary">Sign up</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="/" class="brand">
+          <span class="brand-mark">IH</span>
+          <span class="brand-name">Intern Helper</span>
+        </a>
+        <p class="footer-text">A 24/7 AI assistant that answers intern questions about tasks, submissions and policies.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="/chat">Chat</a>
+        <a href="/faqs">FAQs</a>
+        <a href="/guidelines">Task Guidelines</a>
+        <a href="/policies">Policies</a>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <a href="/login">Log in</a>
+        <a href="/signup">Sign up</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">&copy; 2026 Intern Helper. Built as an internship project.</div>
+    </div>
+  </footer>
+
+  <script>
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      links.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+  </script>
+  <script type="module" src="{{ url_for('static', filename='nav-auth.js') }}"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

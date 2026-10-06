@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}FAQs{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Help center</span>
+    <h1>Frequently asked questions</h1>
+    <p>Quick answers to the questions interns ask most. Can't find yours? Ask the chatbot.</p>
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="container" style="max-width: 820px;">
+    <input type="text" id="pageSearch" class="search-input" placeholder="Search questions...">
+
+    <div class="accordion">
+      {% for f in faqs %}
+      <div class="acc-item" data-search="{{ (f.question ~ ' ' ~ f.answer)|lower }}">
+        <button class="acc-q" type="button">{{ f.question }}</button>
+        <div class="acc-a"><p>{{ f.answer }}</p></div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p class="empty-note" id="emptyNote">No questions match your search.</p>
+
+    <div class="cta-band" style="margin-top: 48px; padding: 40px 24px;">
+      <h2>Still have a question?</h2>
+      <p>Ask Intern Helper and get an answer in seconds.</p>
+      <a href="/chat" class="btn btn-primary btn-lg">Open the chat</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='pages.js') }}"></script>
+{% endblock %}

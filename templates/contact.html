@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Get in touch</span>
+    <h1>Contact us</h1>
+    <p>Have a question the chatbot couldn't answer, or some feedback? Send us a message and we'll get back to you.</p>
+  </div>
+</section>
+
+<section class="page-body">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <div class="contact-box">
+        <h3>Ask the chatbot first</h3>
+        <p>Most questions about tasks, deadlines and policies are answered instantly in the chat.</p>
+        <a href="/chat" class="btn btn-outline" style="margin-top:14px;">Open the chat</a>
+      </div>
+      <div class="contact-box">
+        <h3>Need your mentor?</h3>
+        <p>For anything personal to your internship, such as your task review or certificate, contact your mentor through your internship dashboard.</p>
+      </div>
+      <div class="contact-box">
+        <h3>Feedback is welcome</h3>
+        <p>Found a wrong or missing answer? Tell us so we can improve the knowledge base for every intern.</p>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-msg" id="formMsg"></div>
+
+      <div class="field">
+        <label for="cName">Your name</label>
+        <input type="text" id="cName" placeholder="Your name" maxlength="80" required>
+      </div>
+      <div class="field">
+        <label for="cEmail">Email address</label>
+        <input type="email" id="cEmail" placeholder="you@example.com" maxlength="120" required>
+      </div>
+      <div class="field">
+        <label for="cSubject">Subject</label>
+        <select id="cSubject">
+          <option>General question</option>
+          <option>Task or submission help</option>
+          <option>Wrong or missing answer</option>
+          <option>Feedback or suggestion</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="cMessage">Message</label>
+        <textarea id="cMessage" rows="5" placeholder="Write your message here..." maxlength="2000" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block btn-lg" id="cSend">Send message</button>
+    </form>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script type="module" src="{{ url_for('static', filename='contact.js') }}"></script>
+{% endblock %}
